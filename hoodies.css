@@ -1,0 +1,93 @@
+
+section {
+    font-family: Arial, sans-serif;
+    padding: 16px;
+  }
+  
+  header h2 {
+    font-size: 11px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+  }
+  
+  header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px 0;
+  }
+  
+  header h1 span {
+    font-size: 12px;
+    font-weight: normal;
+    color: #888;
+  }
+  
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  nav a {
+    font-size: 14px;
+    text-decoration: underline; 
+    color: black;
+    font-weight:bold;
+  }
+  
+  footer a {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline; 
+    color: black;
+    margin-top: 20em;
+  }
+  
+
+
+
+  
+
+/* Productlijst */
+[aria-label="Productlijst"] ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+[aria-label="Productlijst"] li {
+    list-style-type: none;
+}
+
+[aria-label="Productlijst"] article {
+    background-color: #fff;
+    text-align: left;
+}
+
+[aria-label="Productlijst"] img {
+    width: 100%;
+    height: auto;
+}
+
+[aria-label="Productlijst"] h2 {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0%;
+
+}
+
+[aria-label="Productlijst"] p {
+    margin: 5px;
+}
+
+
+
+
+@media (width > 1024px) {
+    [aria-label="Productlijst"] ul {
+        grid-template-columns: repeat(4, 1fr); /* 4 kolommen voor grote schermen */
+    }
+}
+

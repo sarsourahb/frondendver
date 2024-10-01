@@ -1,0 +1,127 @@
+/**********/
+/* HEADER */
+/**********/
+
+/* General header styles */
+header {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: .5em;
+	align-items: center;
+	row-gap: 1em;
+}
+
+/* RECLAME */
+header p {
+	width: 100%;
+	background-color: lightgray;
+	margin: 0;
+	padding: 1em;
+	order: -3;
+	text-align: center; /* Horizontaal centreren */
+	display: flex;
+	justify-content: center; /* Horizontaal centreren met flexbox */
+	align-items: center; /* Verticaal centreren met flexbox */
+}
+
+
+/* DE BUTTONS */
+header button {
+	font-size: 1em;
+	appearance: none;
+	border: none;
+	background: none; /* Remove the button background */
+	padding: 0; /* Remove padding */
+	margin: 0; /* Remove margin */
+	width: 3em;
+	aspect-ratio: 1/1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+header button img {
+	width: 1.5em; /* Keep the icon size */
+}
+
+header > button:nth-of-type(1) {
+	order: -2;
+}
+
+header > button:nth-of-type(2) {
+	order: -1;
+}
+
+/* HET LOGO */
+header > a {
+	text-decoration: none;
+	margin: 0 auto;
+}
+
+header > a img {
+	margin: 0 auto;
+	width: 3em;
+}
+
+/* HOOFDMENU */
+header nav:nth-of-type(1) {
+	position: fixed;
+	inset: 0;
+	background-color: rgb(235, 234, 226);
+	translate: -100%;
+}
+
+header nav:nth-of-type(1) button {
+	width: initial;
+	aspect-ratio: initial;
+}
+
+/* SERVICE MENU */
+header nav:nth-of-type(2) ul {
+	display: flex;
+	gap: .5em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+header nav:nth-of-type(2) ul li:nth-of-type(1) {
+	display: none;
+}
+
+
+
+@media (width > 100em) {
+	header p {
+		order:1;
+	}
+	
+	header > button:nth-of-type(1) {
+		display:none;
+	}
+	
+	header > button:nth-of-type(2) {
+		order:0;
+	}
+	
+	header > a {
+		margin:0;
+		order:-2;
+	}
+	
+	header nav:nth-of-type(1) {
+		position:static;
+		inset:0;
+		background-color:pink;
+		translate:0%;
+		order:-1;
+		
+		margin:0 auto;
+	}
+	
+	header nav:nth-of-type(2) ul li:nth-of-type(1) {
+		display:block;
+	}
+}
+
